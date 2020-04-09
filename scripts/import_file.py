@@ -24,3 +24,5 @@ print (df.describe(include = "all"))     #  shows the statiticals information of
 
 print (df.info())       #shows the first 30 rows values of dataset
 
+dfgdg
+
