@@ -23,6 +23,3 @@ print (df.describe())     #  shows the statiticals information of the each colum
 print (df.describe(include = "all"))     #  shows the statiticals information of the each column including not numerical data
 
 print (df.info())       #shows the first 30 rows values of dataset
-
-dfgdg
-
