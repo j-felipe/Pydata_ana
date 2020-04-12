@@ -75,7 +75,7 @@ df["length"]=(df["length"]-df["length"].mean())/(df["length"].std())
 path = r"C:\Users\HP\Desktop\2020_04_10_Datas_Analysis_python\data\automovile_lengthMM.csv"
 df.to_csv(path)
 """
-
+####Bining or grouped 
 bins= np.linspace(min(df["price"]),max(df["price"]),4)      # generates 4 equal space gruop of data 
 print (bins)
 groupe_name= ["low", "mid", "high"]
@@ -85,3 +85,7 @@ df.to_csv(path)
 print (df["price-binned"])
 df["price"].plot.hist(bins=3)
 plt.show()
+
+#### convert object in numerical (Categorical into variables) 
+Dummy = pd.get_dummies(df["fuel-type"])     #creates new array assingning 1 or 0 if the catagorical variable is found ()
+print  (Dummy)
